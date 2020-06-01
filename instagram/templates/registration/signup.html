@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+{% load static %}
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-title mt-4">
+                    <img src="{% static 'images/insta5.png' %}" alt="" width="40%" class="D-block mx-auto">
+                </div>
+                <hr style="background-color: aqua;">
+                <div class="card-body mb-3 mr-3 ml-3 text-dark">
+                    <p class="text-center">Sign up to see photos and videos from your friends.
+                    </p>
+                    <hr style="background-color: aqua;">
+                    <form action="" method="post" novalidate>
+                        {% csrf_token%}
+                        {{ form|crispy}}
+                        <button type="submit" class="btn btn-outline-info btn-sm"> Sign up</button>
+                    </form>
+                </div>
+                <hr style="background-color: aqua;">
+                <p class="mr-4 ml-4 mb-2 text-center text-dark">By signing up, you agree to our Terms , Data Policy and Cookies
+                    Policy.</p>
+            </div>
+            <div class="card mt-2">
+                <div class="card-body mt-3 mb-2 mr-3 ml-3">
+                    <p class="text-dark">Have an account? <a href="{% url 'login' %}">Log in</a></p>
+                </div>
+            </div>
+            <div container>
+                <p class="text-center mt-4">Get the app</p>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5 mb-2">
+                        <img src="{% static 'images/appstore.png' %}" alt="" width="100%" class="download">
+                    </div>
+                    <div class="col-md-5 mb-2">
+                        <img src="{% static 'images/gplay.png' %}" alt="" width="100%" class="download">
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4"></div>
+    </div>
+</div>
+
+{% endblock %}
