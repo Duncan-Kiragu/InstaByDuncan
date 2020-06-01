@@ -87,6 +87,20 @@ Admin can:
 * Heroku
 * jQuery
 
+## Resources used
+* Django documentation
+-------------------------------------------
+> (https://docs.djangoproject.com/en/3.0/)
+> (https://docs.djangoproject.com/en/3.0/)
+> (https://django-tinymce.readthedocs.io/en/)
+> (https://gitter.im/DjangoGirls/tutorial?at=548efdd8a6abd16b7d6c2907)
+> (https://www.django-rest-framework.org/)
+------------------------------------------
+* Youtube
+* (https://dev.to)
+* StackOverflow
+
+
 ## Known Bugs
 * The modal for liking section does not have a close button
 
