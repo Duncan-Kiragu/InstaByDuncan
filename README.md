@@ -74,7 +74,7 @@ Admin can:
 ## Testing the Application
 * To run the tests for the models in the database:
 
-        $ python3.6 manage.py test instagram
+        $ python3.8 manage.py test instagram
 
 ## Technologies Used
 * Python3.8
